@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Abyssinica SIL', serif;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../img/Nazca Bg.jpg");
+}
+
+
+header{
+    margin-top: 4.5rem;
+    margin-right: 4.8rem;
+}
+
+header p{
+    text-align: end;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgba(2, 58, 255, 1);
+}
+
+@media(max-width:768px){
+    header p{
+        display: none;
+    }
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 7.7rem;
+    gap: 20rem;
+}
+
+@media(max-width:768px){
+    main{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 6rem;
+    }
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+}
+
+.informacion p{
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.descargas,.icon-so{
+    display: flex;
+    gap: 3.6rem;
+}
+
+footer{
+    margin-top: 7.3rem;
+    margin-right: 4.8rem;
+    margin-left: 4.8rem;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .ingresar{
+    display: none;
+}
+
+@media(max-width:768px){
+    footer{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    footer .ingresar{
+        display: unset;
+    }
+}
+
+.enlaces,.iconos{
+    display: flex;
+}
+
+.enlaces{
+    gap: 4rem;
+    justify-content: center;
+}
+
+@media(max-width:480px){
+    .enlaces{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.enlaces p{
+    cursor: pointer;
+}
+
+.enlaces p, .derechos p{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(3, 44, 91, 0.35);
+}
+
+@media(max-width:768px){
+    .derechos p{
+        display: none;
+    }
+}
+
+.iconos{
+    gap: 2.8rem;
+}
+
+@media(max-width:768px){
+    .iconos{
+        justify-content: center;
+        gap: 3.6rem;
+    }
+}
